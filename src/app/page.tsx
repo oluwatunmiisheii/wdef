@@ -1,17 +1,19 @@
-import { OurStrengths } from '@/components/OurStrengths'
-import { Hero } from '@/components/Hero'
-import { Values } from '@/components/Values'
-import { Objectives } from '@/components/Objectives'
-import { VisionAndMission } from '../components/VisionAndMission'
+'use client'
+
+import { OurStrengths } from '@/app/_components/OurStrengths'
+import { Values } from './_components/Values'
+import { Objectives } from './_components/Objectives'
+import { VisionAndMission } from './_components/VisionAndMission'
+import { Hero } from './_components/Hero'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <OurStrengths />
       <Values />
       <VisionAndMission />
       <Objectives />
-    </div>
+    </>
   )
 }

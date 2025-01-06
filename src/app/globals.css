@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: #ff5757;
+    --secondary: #000000;
+  }
+}
