@@ -7,9 +7,6 @@ export const VisionAndMission = () => {
       <div className="container mx-auto py-10">
         <div className="flex items-center justify-between gap-20">
           <div className="w-1/2">
-            <h3 className="text-[#333333] font-bold text-3xl leading-10">
-              What we are known for in <br /> transforming youth
-            </h3>
             <div>
               <h5 className="font-bold text-[#333333] mt-6 text-[20px] mb-6">Vision</h5>
               <p className="text-[#7B7B7B] leading-8">
