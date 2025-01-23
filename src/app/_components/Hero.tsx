@@ -3,7 +3,7 @@ import Image from 'next/image'
 export const Hero = () => {
   return (
     <section className="bg-[#BDDAE9]">
-      <div className="container mx-auto py-20">
+      <div className="max-w-6xl mx-auto py-20">
         <div className="flex items-center">
           <div className="w-1/2">
             <h3 className="text-[#333333] font-bold text-6xl leading-normal">
