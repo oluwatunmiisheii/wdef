@@ -75,7 +75,7 @@ export function Header() {
             </nav>
             <Button className="hidden h-10 font-semibold md:flex">Donate</Button>
             <div className="flex gap-x-2 md:hidden">
-              <Button>Book demo</Button>
+              <Button>Donate</Button>
               <Button onClick={() => setOpen(!open)} variant="light" className="aspect-square p-2">
                 {open ? (
                   <RiCloseLine aria-hidden="true" className="size-5" />
