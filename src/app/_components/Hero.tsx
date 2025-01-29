@@ -7,7 +7,7 @@ export const Hero = () => {
         <div className="flex items-center gap-16">
           <div className="w-full lg:w-1/2">
             <h3
-              className="animate-slide-up-fade font-bold text-[#333333] text-4xl leading-[50px] md:text-[54px] md:leading-[68px] font-ibmPlexSansSerif"
+              className="animate-slide-up-fade font-bold text-[#333333] text-4xl leading-[50px] md:text-[52px] md:leading-[68px] font-ibmPlexSansSerif"
               style={{ animationDuration: '700ms' }}
             >
               Creating equal opportunities through technology.
