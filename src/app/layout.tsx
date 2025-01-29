@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Inter, IBM_Plex_Serif, Poppins } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/lib'
-import { Header } from './_components/layout/Headers'
+import { Header } from './_components/layout/Header'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import Footer from './_components/layout/Footer'

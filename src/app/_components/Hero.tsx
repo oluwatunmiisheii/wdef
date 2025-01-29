@@ -3,17 +3,17 @@ import Image from 'next/image'
 export const Hero = () => {
   return (
     <section className="bg-[#BDDAE9]">
-      <div className="max-w-6xl mx-auto py-28">
+      <div className="max-w-6xl mx-auto px-4 py-20">
         <div className="flex items-center gap-16">
           <div className="w-full lg:w-1/2">
             <h3
-              className="animate-slide-up-fade font-bold text-[#333333] text-[54px] leading-[68px] font-ibmPlexSansSerif"
+              className="animate-slide-up-fade font-bold text-[#333333] text-4xl leading-[50px] md:text-[54px] md:leading-[68px] font-ibmPlexSansSerif"
               style={{ animationDuration: '700ms' }}
             >
               Creating equal opportunities through technology.
             </h3>
             <p
-              className="leading-[36px] text-[20px] text-[#333333] mt-10 animate-slide-up-fade font-poppins"
+              className="text-base leading-8 md:leading-[36px] md:text-[20px] text-[#333333] mt-10 animate-slide-up-fade font-poppins"
               style={{ animationDuration: '900ms' }}
             >
               Wilson&apos;s Digital Empowerment Foundation is a non-governmental organization (NGO)

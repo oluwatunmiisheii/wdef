@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const About = () => {
   return (
     <section className="mt-14">
-      <div className="max-w-6xl mx-auto py-10">
+      <div className="max-w-6xl mx-auto py-10 px-4">
         <div className="grid grid-cols-2 items-start justify-between gap-12">
           <div className="col-span-2 md:col-span-1 relative order-2 md:order-1">
             <Image

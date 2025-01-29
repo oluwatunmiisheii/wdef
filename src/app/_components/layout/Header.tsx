@@ -32,42 +32,43 @@ export function Header() {
           'z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform',
           open ? 'h-52' : 'h-16',
           scrolled || open
-            ? 'backdrop-blur-nav max-w-3xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70 fixed inset-x-3 top-4'
-            : 'bg-white/0 dark:bg-gray-950/0',
+            ? 'backdrop-blur-nav max-w-3xl border-gray-100 bg-white/80 shadow-xl shadow-black/5  fixed inset-x-3 top-4'
+            : 'bg-white/0',
         )}
       >
         <div className="w-full md:my-auto">
-          <div className="relative flex items-center justify-between">
-            <Link href={siteConfig.baseLinks.home} aria-label="Home" className="h-[38px] w-auto">
+          <div className="relative flex items-center justify-between h-[38px] w-auto">
+            <Link href={siteConfig.baseLinks.home} aria-label="Home">
               <span className="sr-only">WDEF logo</span>
               <Image
-                alt=""
+                alt="WDEF logo"
                 src="/logo.png"
-                width="200"
-                height="80"
-                className="w-full h-full object-cover"
+                width="120"
+                height="40"
+                className="object-cover hidden lg:block"
+              />
+              <Image
+                alt="WDEF logo"
+                src="/logo-alt.png"
+                width="60"
+                height="40"
+                className="object-cover block lg:hidden"
               />
             </Link>
             <nav className="hidden md:absolute md:left-1/2 md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
               <div className="flex items-center gap-10 font-medium">
-                <Link
-                  className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                  href={siteConfig.baseLinks.about}
-                >
+                <Link className="px-2 py-1 text-gray-900" href={siteConfig.baseLinks.about}>
                   About
                 </Link>
                 <Link
-                  className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                  className="px-2 py-1 text-gray-900"
                   href={siteConfig.baseLinks.volunteer}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Volunteer
                 </Link>
-                <Link
-                  className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                  href={siteConfig.baseLinks.contact}
-                >
+                <Link className="px-2 py-1 text-gray-900" href={siteConfig.baseLinks.contact}>
                   Contact
                 </Link>
               </div>

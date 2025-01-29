@@ -34,7 +34,7 @@ const values = [
 
 export const Values = () => {
   return (
-    <section className="mt-14 bg-[#F5F5F5] py-10">
+    <section className="bg-[#F5F5F5] py-10 px-4">
       <div className="max-w-6xl mx-auto py-10 flex justify-center flex-col items-center">
         <div className="text-center mb-8">
           <h3 className="text-[#8F8F8F] font-extrabold mb-4 font-poppins">Values</h3>
