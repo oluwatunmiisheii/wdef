@@ -15,7 +15,7 @@ export const Objectives = () => {
       <div className="max-w-6xl mx-auto py-10 flex justify-center flex-col items-center">
         <div className="text-center mb-4">
           <h3 className="text-[#8F8F8F] font-extrabold mb-4 font-poppins">Objectives</h3>
-          <h3 className="text-[#333333] font-bold text-3xl leading-10 mb-6 font-ibmPlexSansSerif">
+          <h3 className="text-[#333333] font-bold text-2xl leading-10 mb-6 font-ibmPlexSansSerif">
             Our Strategic Goals for Youth Transformation
           </h3>
         </div>
