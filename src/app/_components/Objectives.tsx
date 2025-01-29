@@ -16,7 +16,7 @@ export const Objectives = () => {
         <div className="text-center mb-4">
           <h3 className="text-[#8F8F8F] font-extrabold mb-4 font-poppins">Objectives</h3>
           <h3 className="text-[#333333] font-bold text-3xl leading-10 mb-6 font-ibmPlexSansSerif">
-            What we are known for in <br /> transforming youth
+            Our Strategic Goals for Youth Transformation
           </h3>
         </div>
         <div>
