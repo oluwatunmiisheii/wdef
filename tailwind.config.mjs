@@ -9,6 +9,9 @@ const config = {
     extend: {
       fontFamily: {
         handwriting: ['NanumPenScript'],
+        ibmPlexSansSerif: ['var(--font-ibm-plex-serif)'],
+        poppins: ['var(--font-poppins)'],
+        inter: ['var(--font-inter)'],
       },
       colors: {
         primary: 'var(--primary)',

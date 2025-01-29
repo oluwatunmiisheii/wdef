@@ -1,70 +1,61 @@
 import React from 'react'
 import Image from 'next/image'
 
+const values = [
+  {
+    title: 'Digital Access',
+    image: '/images/digitalAccess.png',
+    description:
+      'We ensure every youth has equal access to digital resources and technology education, bridging the gap for those in residential care facilities and community programs.',
+    imageProps: { width: 50, height: 40 },
+  },
+  {
+    title: 'Tech Innovation',
+    image: '/images/innovation.png',
+    description:
+      'We cultivate digital skills and spark creativity, empowering youth to become confident innovators and active participants in the tech industry.',
+    imageProps: { width: 28, height: 40 },
+  },
+  {
+    title: 'Future Building',
+    image: '/images/futureBuilding.png',
+    description:
+      'We create sustainable pathways to tech careers through comprehensive education, mentorship, and ongoing support, shaping a more equitable digital future.',
+    imageProps: { width: 45, height: 40 },
+  },
+  {
+    title: 'Youth Empowerment',
+    image: '/images/youthEmpowerment.png',
+    description:
+      'We nurture confidence and capability through hands-on training, interactive workshops, and personalized guidance, helping youth realize their full potential in technology.',
+    imageProps: { width: 40, height: 40 },
+  },
+]
+
 export const Values = () => {
   return (
     <section className="mt-14 bg-[#F5F5F5] py-10">
       <div className="max-w-6xl mx-auto py-10 flex justify-center flex-col items-center">
         <div className="text-center mb-8">
-          <h3 className="text-[#8F8F8F] font-extrabold mb-4">Values</h3>
-          <h2 className="text-[#333333] font-bold text-2xl">
-            What we are known for in <br /> transforming youth
+          <h3 className="text-[#8F8F8F] font-extrabold mb-4 font-poppins">Values</h3>
+          <h2 className="text-[#333333] font-bold text-2xl font-ibmPlexSansSerif">
+            Guiding Principles in Youth <br /> Empowerment
           </h2>
         </div>
-
-        <div className="mt-6 flex justify-between items-center gap-6">
-          <div className="w-[20%] flex items-start">
-            <Image
-              src="/images/digitalAccess.png"
-              alt="logo"
-              width={50}
-              height={40}
-              className="mr-2 mt-2"
-            />
-            <div>
-              <h3 className="text-[#333333] mb-2 font-bold text-[20px]">Digital Access</h3>
-              <p className="text-[#7B7B7B]">Through our programs, we are building a world where.</p>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          {values.map((value) => (
+            <div className="col-span-1 flex flex-col items-start gap-1" key={value.title}>
+              <Image src={value.image} alt="logo" {...value.imageProps} className="mr-2 mt-2" />
+              <div>
+                <h3 className="text-[#333333] mb-2 font-bold text-[20px] font-ibmPlexSansSerif">
+                  {value.title}
+                </h3>
+                <p className="text-[#7B7B7B] font-poppins text-base leading-[28px] text-left text-balance">
+                  {value.description}
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="w-[20%] flex items-start">
-            <Image
-              src="/images/innovation.png"
-              alt="logo"
-              width={28}
-              height={40}
-              className="mr-2 mt-2"
-            />
-            <div>
-              <h3 className="text-[#333333] mb-2 font-bold text-[20px]">Tech Innovation</h3>
-              <p className="text-[#7B7B7B]">Through our programs, we are building a world where.</p>
-            </div>
-          </div>
-          <div className="w-[20%] flex items-start">
-            <Image
-              src="/images/futureBuilding.png"
-              alt="logo"
-              width={45}
-              height={40}
-              className="mr-2 mt-2"
-            />
-            <div>
-              <h3 className="text-[#333333] mb-2 font-bold text-[20px]">Future Building</h3>
-              <p className="text-[#7B7B7B]">Through our programs, we are building a world where.</p>
-            </div>
-          </div>
-          <div className="w-[20%] flex items-start">
-            <Image
-              src="/images/youthEmpowerment.png"
-              alt="logo"
-              width={40}
-              height={40}
-              className="mr-2"
-            />
-            <div>
-              <h3 className="text-[#333333] mb-2 font-bold text-[20px]">Youth Empowerment</h3>
-              <p className="text-[#7B7B7B]">Through our programs, we are building a world where.</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

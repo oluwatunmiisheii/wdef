@@ -1,6 +1,6 @@
 'use client'
 
-import { OurStrengths } from '@/app/_components/OurStrengths'
+import { About } from '@/app/_components/About'
 import { Values } from './_components/Values'
 import { Objectives } from './_components/Objectives'
 import { VisionAndMission } from './_components/VisionAndMission'
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <OurStrengths />
+      <About />
       <Values />
       <VisionAndMission />
       <Objectives />

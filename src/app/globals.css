@@ -15,5 +15,19 @@
   :root {
     --primary: #ff5757;
     --secondary: #000000;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-ibm-plex-serif: 'IBM Plex Serif', serif;
+    --inter: 'Inter', sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--inter);
+  }
+  p {
+    font-family: var(--inter);
   }
 }
