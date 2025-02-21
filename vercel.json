@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "http://wdef.ng",
+      "destination": "https://www.wdef.ng",
+      "permanent": true
+    },
+    {
+      "source": "http://www.wdef.ng",
+      "destination": "https://www.wdef.ng",
+      "permanent": true
+    }
+  ]
+}
