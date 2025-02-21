@@ -4,28 +4,28 @@ import Image from 'next/image'
 const values = [
   {
     title: 'Digital Access',
-    image: '/images/digitalAccess.png',
+    image: '/images/digital-access.svg',
     description:
       'We ensure every youth has equal access to digital resources and technology education, bridging the gap for those in residential care facilities and community programs.',
     imageProps: { width: 50, height: 40 },
   },
   {
     title: 'Tech Innovation',
-    image: '/images/innovation.png',
+    image: '/images/innovation.svg',
     description:
       'We cultivate digital skills and spark creativity, empowering youth to become confident innovators and active participants in the tech industry.',
     imageProps: { width: 28, height: 40 },
   },
   {
     title: 'Future Building',
-    image: '/images/futureBuilding.png',
+    image: '/images/future-building.svg',
     description:
       'We create sustainable pathways to tech careers through comprehensive education, mentorship, and ongoing support, shaping a more equitable digital future.',
     imageProps: { width: 45, height: 40 },
   },
   {
     title: 'Youth Empowerment',
-    image: '/images/youthEmpowerment.png',
+    image: '/images/youth-empowerment.svg',
     description:
       'We nurture confidence and capability through hands-on training, interactive workshops, and personalized guidance, helping youth realize their full potential in technology.',
     imageProps: { width: 40, height: 40 },

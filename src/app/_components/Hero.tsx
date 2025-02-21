@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 export const Hero = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const videoId = 'UxACmIxisig'
   const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`
   return (
