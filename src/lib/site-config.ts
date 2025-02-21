@@ -15,7 +15,7 @@ export const siteConfig = {
     twitter: 'https://twitter.com/wdefoundation',
     linkedin: 'https://www.linkedin.com/company/wilson-digital-empowerment-foundation',
     instagram: 'https://www.instagram.com/wdefoundation',
-    email: 'mailto:oluwatunmiseadenuga@gmail.com',
+    email: 'mailto:info@wdef.ng',
   },
 }
 

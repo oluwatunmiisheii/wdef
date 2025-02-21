@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Inter, IBM_Plex_Serif, Poppins } from 'next/font/google'
+import { Geist, Titillium_Web, Inter, IBM_Plex_Serif, Poppins } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/lib'
 import { Header } from './_components/layout/Header'
@@ -28,6 +28,12 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+})
+
+const titilliumWeb = Titillium_Web({
+  subsets: ['latin'],
+  variable: '--font-titillium-web',
+  weight: ['400', '600', '700'],
 })
 
 export const metadata = {

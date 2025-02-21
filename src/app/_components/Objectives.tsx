@@ -23,7 +23,9 @@ export const Objectives = () => {
           <ul className="list-none">
             {listItems.map((item, index) => (
               <li key={index} className="flex items-start mb-2 leading-8">
-                <Star className="w-5 h-5 fill-primary mr-2 mt-2 stroke-primary" />
+                <div className="flex-shrink-0">
+                  <Star className="w-5 h-5 fill-primary mr-2 mt-2 stroke-primary" />
+                </div>
                 <span className="text-[#7B7B7B] font-poppins">{item}</span>
               </li>
             ))}

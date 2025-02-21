@@ -1,6 +1,6 @@
 'use client'
 
-import { cx, siteConfig, useScroll } from '@/lib'
+import { cn, siteConfig, useScroll } from '@/lib'
 import { RiCloseLine, RiMenuLine } from '@remixicon/react'
 import Link from 'next/link'
 import React from 'react'
@@ -28,7 +28,7 @@ export function Header() {
   return (
     <>
       <header
-        className={cx(
+        className={cn(
           'z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform',
           open ? 'h-52' : 'h-16',
           scrolled || open
@@ -86,7 +86,7 @@ export function Header() {
             </div>
           </div>
           <nav
-            className={cx(
+            className={cn(
               'my-6 flex text-lg ease-in-out will-change-transform md:hidden',
               open ? '' : 'hidden',
             )}

@@ -5,7 +5,7 @@ import { RiLoader2Fill } from '@remixicon/react'
 import React from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 
-import { cx, focusRing } from '@/lib'
+import { cn, focusRing } from '@/lib'
 
 const buttonVariants = tv({
   base: [
@@ -117,7 +117,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Component
         ref={forwardedRef}
-        className={cx(buttonVariants({ variant }), className)}
+        className={cn(buttonVariants({ variant }), className)}
         disabled={disabled || isLoading}
         tremor-id="tremor-raw"
         {...props}
