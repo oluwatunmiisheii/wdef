@@ -4,7 +4,7 @@ import { Download } from 'lucide-react'
 
 export const Hero = () => {
   return (
-    <section className="bg-[#BDDAE9] min-h-[50vh] w-full flex items-center">
+    <section className="bg-[#BDDAE9] w-full flex items-center">
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-16">
           <div className="w-full lg:w-1/2 space-y-8">
@@ -33,7 +33,7 @@ export const Hero = () => {
             className="w-full lg:w-1/2 mt-6 lg:mt-0 relative animate-fade-in"
             style={{ animationDelay: '500ms' }}
           >
-            <div className="bg-transparent w-full h-[400px] rounded-2xl flex items-center justify-center">
+            <div className="bg-transparent w-full rounded-2xl flex items-center justify-center">
               <VideoPlayer videoId="UxACmIxisig" thumbnailUrl="/images/wilson.png" />
             </div>
           </div>
