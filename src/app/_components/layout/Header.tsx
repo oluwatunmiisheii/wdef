@@ -3,9 +3,10 @@
 import { cn, siteConfig, useScroll } from '@/lib'
 import { RiCloseLine, RiMenuLine } from '@remixicon/react'
 import Link from 'next/link'
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Button } from '@/components/button'
 import Image from 'next/image'
+import { Show } from 'react-smart-conditional'
 
 export function Header() {
   const scrolled = useScroll(15)
@@ -29,7 +30,7 @@ export function Header() {
     <>
       <header
         className={cn(
-          'z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform',
+          'z-50 mx-auto flex max-w-7xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform',
           open ? 'h-52' : 'h-16',
           scrolled || open
             ? 'backdrop-blur-nav max-w-3xl border-gray-100 bg-white/80 shadow-xl shadow-black/5  fixed inset-x-3 top-4'
@@ -76,13 +77,21 @@ export function Header() {
             <Button className="hidden h-10 font-semibold md:flex">Donate</Button>
             <div className="flex gap-x-2 md:hidden">
               <Button>Donate</Button>
-              <Button onClick={() => setOpen(!open)} variant="light" className="aspect-square p-2">
-                {open ? (
+              <Show
+                as={Button}
+                onClick={() => setOpen(!open)}
+                variant="light"
+                className="aspect-square p-2"
+              >
+                <Show.If as={Fragment} condition={open}>
+                  <span className="sr-only">Close menu</span>
                   <RiCloseLine aria-hidden="true" className="size-5" />
-                ) : (
+                </Show.If>
+                <Show.If as={Fragment} condition={!open}>
+                  <span className="sr-only">Open menu</span>
                   <RiMenuLine aria-hidden="true" className="size-5" />
-                )}
-              </Button>
+                </Show.If>
+              </Show>
             </div>
           </div>
           <nav
