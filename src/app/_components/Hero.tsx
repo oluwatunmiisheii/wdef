@@ -1,6 +1,3 @@
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
-import Image from 'next/image'
-import { useState } from 'react'
 import { VideoPlayer } from './VideoPlayer'
 import { Button } from '@/components/button'
 import { Download } from 'lucide-react'
