@@ -10,7 +10,7 @@ export const VisionAndMission = () => {
             <h5 className="font-bold text-[#333333] mt-6 text-[20px] mb-6 font-ibmPlexSansSerif">
               Vision
             </h5>
-            <p className="text-[#7B7B7B] leading-8 font-poppins">
+            <p className="text-[#7B7B7B] leading-8">
               A world where every youth, regardless of background, has equal access to digital
               resources and opportunities, empowering them to thrive in the technology-driven
               future..
@@ -20,7 +20,7 @@ export const VisionAndMission = () => {
             <h5 className="font-bold text-[#333333] mt-6 text-[20px] mb-6 font-ibmPlexSansSerif">
               Mission
             </h5>
-            <p className="text-[#7B7B7B] leading-8 font-poppins">
+            <p className="text-[#7B7B7B] leading-8">
               Wilson&apos;s Digital Empowerment Foundation bridges the digital divide by providing
               youth in residential care and community programs with technology access, education,
               and mentorship. We distribute laptops, deliver comprehensive tech training, and foster

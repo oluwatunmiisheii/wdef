@@ -49,7 +49,7 @@ export const About = () => {
             <h3 className="text-[#333333] font-bold text-3xl leading-10 font-ibmPlexSansSerif">
               About Us
             </h3>
-            <p className="leading-8 text-[16px] text-[#7B7B7B] mt-6 font-poppins">
+            <p className="leading-8 text-[16px] text-[#7B7B7B] mt-6">
               We are a team of passionate tech enthusiasts and educators dedicated to achieving tech
               inclusion for all youth. Our NGO leads transformative initiatives that empower young
               people from all backgrounds - especially those in residential care facilities and

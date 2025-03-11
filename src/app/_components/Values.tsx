@@ -37,7 +37,7 @@ export const Values = () => {
     <section className="bg-[#F5F5F5] py-10 px-4">
       <div className="max-w-6xl mx-auto py-10 flex justify-center flex-col items-center">
         <div className="text-center mb-8">
-          <h3 className="text-[#8F8F8F] font-extrabold mb-4 font-poppins">Values</h3>
+          <h3 className="text-[#8F8F8F] font-extrabold mb-4">Values</h3>
           <h2 className="text-[#333333] font-bold text-2xl font-ibmPlexSansSerif">
             Guiding Principles in Youth <br /> Empowerment
           </h2>
@@ -50,7 +50,7 @@ export const Values = () => {
                 <h3 className="text-[#333333] mb-2 font-bold text-[20px] font-ibmPlexSansSerif">
                   {value.title}
                 </h3>
-                <p className="text-[#7B7B7B] font-poppins text-base leading-[28px] text-left text-balance">
+                <p className="text-[#7B7B7B] text-base leading-[28px] text-left text-balance">
                   {value.description}
                 </p>
               </div>

@@ -43,7 +43,7 @@ export default function Footer() {
               <h2 className="text-xl font-bold font-ibmPlexSansSerif">
                 Transforming Youth Into Tech Innovators
               </h2>
-              <p className="text-gray-400 font-poppins">
+              <p className="text-gray-400">
                 We&apos;re bridging the digital divide by equipping underserved youth with
                 technology education, resources, and mentorship to become the next generation of
                 tech leaders. 🌟 💻
@@ -53,7 +53,7 @@ export default function Footer() {
 
           <div className="space-y-6">
             <h2 className="text-xl font-bold font-ibmPlexSansSerif">Join Our Mission</h2>
-            <p className="text-gray-400 font-poppins">
+            <p className="text-gray-400">
               Help us empower youth through technology. Whether you want to mentor, volunteer, or
               support our digital inclusion initiatives, connect with us through these channels:
             </p>
@@ -80,7 +80,7 @@ export default function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-gray-400 hover:text-white transition-colors font-poppins"
+                  className="text-gray-400 hover:text-white transition-colors"
                   target={link.target}
                   {...(link.target === '_blank' && { rel: 'noopener noreferrer' })}
                 >
